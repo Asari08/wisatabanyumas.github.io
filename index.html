@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolan Banyumas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Tambahkan ini untuk scroll halus */
+        html {
+            scroll-behavior: smooth;
+        }
+        .section-title-container {
+            display: flex;
+            justify-content: space-between; /* Menyusun judul dan teks "Lihat Semua" secara horizontal */
+            align-items: center; /* Memastikan elemen berada pada tengah vertikal */
+        }
+        .view-all {
+            font-size: 0.9em; /* Ukuran font lebih kecil */
+            cursor: pointer; /* Menunjukkan bahwa ini bisa diklik */
+            color: blue; /* Warna teks, bisa diubah sesuai kebutuhan */
+            text-decoration: underline; /* Garis bawah untuk menunjukkan tautan */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <img src="img/logo_dolan_bms2.png.png" alt="Dolan Banyumas" class="logo">
+            <div class="nav-menu">
+                <a href="#">Home</a>
+                <a href="#destinasi">Objek Wisata</a> <!-- Menambahkan link ke bagian "Destinasi Pilihan" -->
+                <a href="#kuliner">Kuliner</a> <!-- Menambahkan link ke bagian "Rekomendasi Kuliner" -->
+                <a href="#">Penginapan</a>
+                <a href="#">Oleh-oleh</a>
+                <a href="#">Desa Wisata</a>
+                <a href="#">Biro Perjalanan</a>
+                <a href="#">Event</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <h1>Mayuh Dolan Maring Banyumas!</h1>
+                <p class="hero-desc">
+                    Dolan Banyumas adalah aplikasi yang memudahkan para traveler dalam 
+                    menemukan guide untuk menikmati indahnya Banyumas dengan fasilitas lengkap 
+                    dari objek wisata, desa wisata, penginapan kuliner, dan oleh-oleh.
+                </p>
+                <p class="hero-desc">
+                    Anda tidak perlu lagi pusing bila berkunjung ke Banyumas. Cukup dengan Dolan 
+                    Banyumas segala yang anda butuhkan selama di Banyumas akan terpenuhi, ayo 
+                    piknik Banyumas!
+                </p>
+                <img src="img/playstore.png.png" alt="Get it on Google Play" class="google-play">
+            </div>
+            
+            <div class="search-box">
+                <h3>Apa yang anda cari?</h3>
+                <form class="search-form">
+                    <select>
+                        <option>Kategori</option>
+                    </select>
+                    <select>
+                        <option>Pilih Sub Kategori</option>
+                    </select>
+                    <button class="search-btn">CARI</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinasi" class="section">
+        <div class="section-title-container">
+            <h2 class="section-title">Destinasi Pilihan</h2>
+            <a href="#" class="view-all">Lihat Semua</a> <!-- Menambahkan link "Lihat Semua" -->
+        </div>
+        <div class="card-container">
+            <div class="grid">
+                <div class="card">
+                    <img src="img/lokawisata btr.jpg" alt="Lokawisata">
+                    <div class="card-label">Lokawisata Baturraden</div>
+                </div>
+                <div class="card">
+                    <a href="telagasunyi.html">
+                    <img src="img/telaga shttt.webp" alt="Telaga">
+                    <div class="card-label">Telaga Sunyi</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <img src="img/pinus limpa.jpg" alt="Hutan">
+                    <div class="card-label">Hutan Pinus Limpakuwus</div>
+                </div>
+                <div class="card">
+                    <img src="img/Wanasuta-Dermaji-Banyumas.jpeg" alt="Wanasuta">
+                    <div class="card-label">Wanasuta Dermaji</div>
+                </div>
+                <div class="card">
+                    <img src="img/menara teratai oy.jpg" alt="Menara">
+                    <div class="card-label">Menara Teratai</div>
+                </div>
+            </div>
+            <div class="grid grid-row-2">
+                <div class="card">
+                    <img src="img/taman mas.JPG" alt="Taman">
+                    <div class="card-label">Taman Mas Kemambang</div>
+                </div>
+                <div class="card">
+                    <img src="img/curug jenggala.jpg" alt="Curug">
+                    <div class="card-label">Curug Jenggala</div>
+                </div>
+                <div class="card">
+                    <img src="img/the village.jpg" alt="Village">
+                    <div class="card-label">The Village Purwokerto</div>
+                </div>
+                <div class="card">
+                    <img src="img/small owrld.jpg" alt="Small World">
+                    <div class="card-label">New Small World</div>
+                </div>
+                <div class="card">
+                    <img src="img/dreamland.jpeg" alt="Dream Land">
+                    <div class="card-label">Dream Land</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kuliner" class="section"> <!-- Menambahkan id "kuliner" untuk scroll otomatis -->
+        <div class="section-title-container">
+            <h2 class="section-title">Rekomendasi Kuliner</h2>
+            <a href="#" class="view-all">Lihat Semua</a> <!-- Menambahkan link "Lihat Semua" di bagian kuliner -->
+        </div>
+        <div class="grid">
+            <div class="card">
+                <img src="img/mendoan.jpg" alt="Mendoan">
+                <div class="card-label">Mendoan</div>
+            </div>
+            <div class="card">
+                <img src="img/getuk.jpg" alt="Getuk">
+                <div class="card-label">Getuk Goreng Sokaraja</div>
+            </div>
+            <div class="card">
+                <img src="img/soto sokaraja.jpg" alt="Soto">
+                <div class="card-label">Soto Sokaraja</div>
+            </div>
+            <div class="card">
+                <img src="img/jenang jaket.jpg" alt="Jenang">
+                <div class="card-label">Jenang Jaket</div>
+            </div>
+            <div class="card">
+                <img src="img/mendoan.jpg" alt="Mendoan">
+                <div class="card-label">Mendoan</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tentang Dolan Banyumas</h3>
+                    <p>Portal wisata resmi Kabupaten Banyumas yang menyajikan informasi lengkap tentang destinasi wisata, kuliner, dan budaya.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p>Email: info@dolanbanyumas.com</p>
+                    <p>Telp: (0281) 123456</p>
+                    <p>Alamat: Jl. Jenderal Sudirman No. 1, Purwokerto</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dolan Banyumas. Muhammad Asari.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
